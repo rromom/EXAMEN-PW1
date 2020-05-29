@@ -24,6 +24,7 @@ let menu = async() => {
             saveData(country)
             break;
         default:
+            console.log(chalk.bgRedBright(chalk.white(chalk.bold("ERROR DE OPCION"))));
             break;
     }
 }
