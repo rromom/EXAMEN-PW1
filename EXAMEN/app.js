@@ -29,4 +29,4 @@ let menu = async() => {
             break;
     }
 }
-menu().then()
+menu().then().catch(err => console.log(err.name))
