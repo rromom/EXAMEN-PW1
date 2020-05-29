@@ -13,12 +13,13 @@ const getCountryData = (data, code, anio) => {
 
 
     return {
-        nombre: myCountry['Country Name'],
-        codigo: myCountry['Country Code'],
-        indicador: myCountry['Indicator Name'],
-        indicador_codigo: myCountry['Indicator Code'],
+
+
+        DATOS: myCountry['Indicator Name'],
+        PAIS: myCountry['Country Name'],
+        CODIGO: myCountry['Country Code'],
         anio,
-        internet: parseFloat(myCountry[anio]),
+        VALOR: parseFloat(myCountry[anio]),
 
     };
 
@@ -65,7 +66,7 @@ const importCSV = async path => {
 
 const saveData = async(datos) => {
     let date = JSON.stringify(datos, null, 2);
-    path = `./resultados/${datos.codigo}-${datos.anio}.txt`
+    path = `./resultados/${datos.CODIGO}-${datos.anio}.txt`
         //console.log(path)
     try {
         await fs.writeFile(path, date)
