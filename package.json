@@ -1,0 +1,26 @@
+{
+    "name": "internet_suscription_analize",
+    "version": "1.0.0",
+    "description": "examen plataformas web",
+    "main": "app.js",
+    "bin": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Ricardo Romo",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rromom/EXAMEN-PW1.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rromom/EXAMEN-PW1/issues"
+    },
+    "homepage": "https://github.com/rromom/EXAMEN-PW1#readme",
+    "dependencies": {
+        "chalk": "^4.0.0",
+        "csvtojson": "^2.0.10",
+        "mkdirp": "^1.0.4",
+        "yargs": "^15.3.1"
+    }
+}
