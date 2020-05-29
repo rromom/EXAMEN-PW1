@@ -78,10 +78,16 @@ const saveData = async(datos) => {
     }
 }
 
-const test = async() => {
-    data = await importCSV('C:/Users/Ricardo/Desktop/examen/EXAMEN/datos.csv')
-    country = getCountryData(data, 'AFG', 2017)
-    await saveData(country)
+// const test = async() => {
+//     data = await importCSV('C:/Users/Ricardo/Desktop/examen/EXAMEN/datos.csv')
+//     country = getCountryData(data, 'AFG', 2017)
+//     await saveData(country)
 
+// }
+// test().then().catch()
+
+module.exports = {
+    getCountryData,
+    importCSV,
+    saveData
 }
-test().then().catch()
