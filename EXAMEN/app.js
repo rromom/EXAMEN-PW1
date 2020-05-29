@@ -18,7 +18,7 @@ let menu = async() => {
     country = getCountryData(data, pais, anio)
     switch (comand) {
         case 'mostrar':
-            console.log(chalk.bgBlueBright(chalk.white(chalk.bold("=========================== RESULTADOS OBTENIDOS ===========================\n"))))
+            console.log(chalk.bgGreen(chalk.white(chalk.bold("=========================== RESULTADOS OBTENIDOS ===========================\n"))))
             console.table(country)
             break;
         case 'guardar':
