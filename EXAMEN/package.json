@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/rromom/EXAMEN-PW1#readme",
   "dependencies": {
+    "chalk": "^4.0.0",
+    "csvtojson": "^2.0.10",
     "yargs": "^15.3.1"
   }
 }
