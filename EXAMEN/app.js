@@ -13,6 +13,7 @@ let anio = argv.anio
 let arch = argv.archivo
 
 let menu = async() => {
+
     data = await importCSV(arch)
     country = getCountryData(data, pais, anio)
     switch (comand) {

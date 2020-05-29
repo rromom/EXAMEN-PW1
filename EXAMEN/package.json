@@ -19,6 +19,7 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "csvtojson": "^2.0.10",
+    "mkdirp": "^1.0.4",
     "yargs": "^15.3.1"
   }
 }

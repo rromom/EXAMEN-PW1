@@ -3,6 +3,10 @@ const csvToJson = require('csvtojson');
 const chalk = require('chalk');
 const validCountries = require('../model/includes.json');
 
+fs.mkdir('./resultados', { recursive: true }, (err) => {
+    if (err) throw err;
+});
+
 const getCountryData = (data, code, anio) => {
     const myCountry = data.find(country => country['Country Code'] === code.toUpperCase())
 
@@ -65,7 +69,8 @@ const importCSV = async path => {
 }
 
 const saveData = async(datos) => {
-    let date = JSON.stringify(datos, null, 2);
+    //let date = JSON.stringify(datos, null, 2);
+    date = `Datos: ${datos.DATOS} \nPaís: ${datos.PAIS} \nAño: ${datos.anio} \nValor: ${datos.VALOR}`
     path = `./resultados/${datos.CODIGO}-${datos.anio}.txt`
         //console.log(path)
     try {
